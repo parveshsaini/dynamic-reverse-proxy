@@ -1,0 +1,27 @@
+{
+  "name": "reverse-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ls && node dist/index.js",
+    "dev": "ls && tsc-watch --onSuccess \"pnpm start\"",
+    "build": "tsc -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dockerode": "^4.0.2",
+    "express": "^4.21.1",
+    "http-proxy": "^1.18.1",
+    "tsc-watch": "^6.2.0",
+    "typescript": "^5.6.3",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.31",
+    "@types/express": "^5.0.0",
+    "@types/http-proxy": "^1.17.15"
+  }
+}
